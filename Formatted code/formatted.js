@@ -1,4 +1,4 @@
-//  
+//
 // ██╗░░░██╗██╗███╗░░██╗░█████╗░██████╗░
 // ██║░░░██║██║████╗░██║██╔══██╗██╔══██╗
 // ╚██╗░██╔╝██║██╔██╗██║██║░░██║██║░░██║
@@ -93,8 +93,6 @@ navLi.forEach( li => {
   }
 })
 })
-console.log('%c Designed and Developed by Vinod Jangid ', 'background-image: linear-gradient(90deg,#8000ff,#6bc5f8); color: white;font-weight:900;font-size:1rem; padding:20px;');
-
 
 
 let mybutton = document.getElementById("backtotopbutton");
@@ -109,7 +107,7 @@ function scrollFunction(){
   }
    else{
       mybutton.style.display = "none";
-     
+
       }
 }
 
@@ -117,10 +115,6 @@ function scrolltoTopfunction(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-// document.addEventListener("contextmenu", function (e){
-//   e.preventDefault();
-// }, false);
-// https://github.com/vinodjangid07
 document.addEventListener("contextmenu", function(e){
   if (e.target.nodeName === "IMG") {
       e.preventDefault();
@@ -137,14 +131,14 @@ let pupilStartPoint = -10;
 let pupilRangeX = 20;
 let pupilRangeY = 15;
 
-// mouse X 
+// mouse X
 let mouseXStartPoint = 0;
 let mouseXEndPoint = window.innerWidth;
 let currentXPosition = 0;
 let fracXValue = 0;
 
 
-// mouse Y position 
+// mouse Y position
 let mouseYEndPoint = window.innerHeight;
 let currentYPosition = 0;
 let fracYValue = 0;
@@ -157,7 +151,7 @@ const mouseMove = (event) => {
 
     currentYPosition = event.clientY;
     fracYValue = currentYPosition / mouseYEndPoint;
- 
+
     // footer
     let pupilXCurrrentPosition = pupilStartPoint + (fracXValue * pupilRangeX);
     let pupilYCurrrentPosition = pupilStartPoint + (fracYValue * pupilRangeY);
